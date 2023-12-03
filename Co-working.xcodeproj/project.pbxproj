@@ -23,6 +23,9 @@
 		B40E0E7F2B1BDAAF006DD6F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E7E2B1BDAAF006DD6F5 /* Constants.swift */; };
 		B40E0E812B1BDFF0006DD6F5 /* BookingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */; };
 		B40E0E832B1BE242006DD6F5 /* BookingHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */; };
+		B4B9AD642B1CBD6800556B8A /* DateSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD632B1CBD6800556B8A /* DateSelectViewController.swift */; };
+		B4B9AD662B1CDB2700556B8A /* DateCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD652B1CDB2700556B8A /* DateCollectionCell.swift */; };
+		B4B9AD6C2B1D116C00556B8A /* DeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD6B2B1D116C00556B8A /* DeskViewController.swift */; };
 		B4CD29502B1C8EA300012789 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD294F2B1C8EA300012789 /* CalendarKit */; };
 		B4CD29522B1C8F5A00012789 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */; };
 		B4CD29542B1C8FB500012789 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD29532B1C8FB500012789 /* EKWrapper.swift */; };
@@ -51,6 +54,9 @@
 		B40E0E7E2B1BDAAF006DD6F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryController.swift; sourceTree = "<group>"; };
 		B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryCell.swift; sourceTree = "<group>"; };
+		B4B9AD632B1CBD6800556B8A /* DateSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectViewController.swift; sourceTree = "<group>"; };
+		B4B9AD652B1CDB2700556B8A /* DateCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionCell.swift; sourceTree = "<group>"; };
+		B4B9AD6B2B1D116C00556B8A /* DeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskViewController.swift; sourceTree = "<group>"; };
 		B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B4CD29532B1C8FB500012789 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		B4CD295A2B1C9D0C00012789 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
@@ -109,6 +115,9 @@
 				B40E0E722B1BC63D006DD6F5 /* HomeViewController.swift */,
 				B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */,
 				B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */,
+				B4B9AD632B1CBD6800556B8A /* DateSelectViewController.swift */,
+				B4B9AD652B1CDB2700556B8A /* DateCollectionCell.swift */,
+				B4B9AD6B2B1D116C00556B8A /* DeskViewController.swift */,
 			);
 			path = "Co-working";
 			sourceTree = "<group>";
@@ -256,8 +265,11 @@
 				B40E0E7C2B1BD64E006DD6F5 /* ExtensionCreateAccountVC.swift in Sources */,
 				B40E0E762B1BC892006DD6F5 /* WebServiceManager.swift in Sources */,
 				B4CD29542B1C8FB500012789 /* EKWrapper.swift in Sources */,
+				B4B9AD662B1CDB2700556B8A /* DateCollectionCell.swift in Sources */,
+				B4B9AD6C2B1D116C00556B8A /* DeskViewController.swift in Sources */,
 				B40E0E582B1BB746006DD6F5 /* AppDelegate.swift in Sources */,
 				B40E0E792B1BD032006DD6F5 /* AccountCreateModel.swift in Sources */,
+				B4B9AD642B1CBD6800556B8A /* DateSelectViewController.swift in Sources */,
 				B40E0E732B1BC63D006DD6F5 /* HomeViewController.swift in Sources */,
 				B4CD29522B1C8F5A00012789 /* CalendarViewController.swift in Sources */,
 				B40E0E5A2B1BB746006DD6F5 /* SceneDelegate.swift in Sources */,

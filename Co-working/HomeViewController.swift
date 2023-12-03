@@ -22,7 +22,7 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func bookWorkStationTapped(_ sender: UIButton) {
-        let calenderController = storyboard?.instantiateViewController(identifier: "CalendarViewController") as! CalendarViewController
+        let calenderController = storyboard?.instantiateViewController(identifier: "DateSelectViewController") as! DateSelectViewController
         self.navigationController?.pushViewController(calenderController, animated: true)
 
     }
