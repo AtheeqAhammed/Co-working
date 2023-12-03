@@ -23,6 +23,13 @@
 		B40E0E7F2B1BDAAF006DD6F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E7E2B1BDAAF006DD6F5 /* Constants.swift */; };
 		B40E0E812B1BDFF0006DD6F5 /* BookingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */; };
 		B40E0E832B1BE242006DD6F5 /* BookingHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */; };
+		B4CD29502B1C8EA300012789 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD294F2B1C8EA300012789 /* CalendarKit */; };
+		B4CD29522B1C8F5A00012789 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */; };
+		B4CD29542B1C8FB500012789 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD29532B1C8FB500012789 /* EKWrapper.swift */; };
+		B4CD29582B1C9C3B00012789 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD29572B1C9C3B00012789 /* Alamofire */; };
+		B4CD295B2B1C9D0C00012789 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD295A2B1C9D0C00012789 /* CreateAccountViewModel.swift */; };
+		B4CD295D2B1CA94100012789 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD295C2B1CA94100012789 /* LoginModel.swift */; };
+		B4CD295F2B1CA9DA00012789 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD295E2B1CA9DA00012789 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,11 @@
 		B40E0E7E2B1BDAAF006DD6F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryController.swift; sourceTree = "<group>"; };
 		B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryCell.swift; sourceTree = "<group>"; };
+		B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		B4CD29532B1C8FB500012789 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
+		B4CD295A2B1C9D0C00012789 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		B4CD295C2B1CA94100012789 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		B4CD295E2B1CA9DA00012789 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CD29502B1C8EA300012789 /* CalendarKit in Frameworks */,
+				B4CD29582B1C9C3B00012789 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +90,11 @@
 		B40E0E562B1BB746006DD6F5 /* Co-working */ = {
 			isa = PBXGroup;
 			children = (
+				B4CD29552B1C8FEA00012789 /* Calender */,
 				B40E0E7D2B1BDA99006DD6F5 /* Constants */,
 				B40E0E7A2B1BD620006DD6F5 /* Extension */,
 				B40E0E772B1BD019006DD6F5 /* Model */,
+				B4CD29592B1C9CFA00012789 /* ViewModel */,
 				B40E0E742B1BC875006DD6F5 /* WebServiceManager */,
 				B40E0E572B1BB746006DD6F5 /* AppDelegate.swift */,
 				B40E0E592B1BB746006DD6F5 /* SceneDelegate.swift */,
@@ -109,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B40E0E782B1BD032006DD6F5 /* AccountCreateModel.swift */,
+				B4CD295C2B1CA94100012789 /* LoginModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -129,6 +146,24 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		B4CD29552B1C8FEA00012789 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				B4CD29532B1C8FB500012789 /* EKWrapper.swift */,
+				B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		B4CD29592B1C9CFA00012789 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B4CD295A2B1C9D0C00012789 /* CreateAccountViewModel.swift */,
+				B4CD295E2B1CA9DA00012789 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +180,10 @@
 			dependencies = (
 			);
 			name = "Co-working";
+			packageProductDependencies = (
+				B4CD294F2B1C8EA300012789 /* CalendarKit */,
+				B4CD29572B1C9C3B00012789 /* Alamofire */,
+			);
 			productName = "Co-working";
 			productReference = B40E0E542B1BB746006DD6F5 /* Co-working.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +212,10 @@
 				Base,
 			);
 			mainGroup = B40E0E4B2B1BB746006DD6F5;
+			packageReferences = (
+				B4CD294E2B1C8EA300012789 /* XCRemoteSwiftPackageReference "CalendarKit" */,
+				B4CD29562B1C9C3B00012789 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B40E0E552B1BB746006DD6F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -206,12 +249,17 @@
 				B40E0E7F2B1BDAAF006DD6F5 /* Constants.swift in Sources */,
 				B40E0E6F2B1BB770006DD6F5 /* CreateAccountViewController.swift in Sources */,
 				B40E0E5C2B1BB746006DD6F5 /* ViewController.swift in Sources */,
+				B4CD295B2B1C9D0C00012789 /* CreateAccountViewModel.swift in Sources */,
 				B40E0E622B1BB746006DD6F5 /* Co_working.xcdatamodeld in Sources */,
+				B4CD295F2B1CA9DA00012789 /* LoginViewModel.swift in Sources */,
+				B4CD295D2B1CA94100012789 /* LoginModel.swift in Sources */,
 				B40E0E7C2B1BD64E006DD6F5 /* ExtensionCreateAccountVC.swift in Sources */,
 				B40E0E762B1BC892006DD6F5 /* WebServiceManager.swift in Sources */,
+				B4CD29542B1C8FB500012789 /* EKWrapper.swift in Sources */,
 				B40E0E582B1BB746006DD6F5 /* AppDelegate.swift in Sources */,
 				B40E0E792B1BD032006DD6F5 /* AccountCreateModel.swift in Sources */,
 				B40E0E732B1BC63D006DD6F5 /* HomeViewController.swift in Sources */,
+				B4CD29522B1C8F5A00012789 /* CalendarViewController.swift in Sources */,
 				B40E0E5A2B1BB746006DD6F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +476,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4CD294E2B1C8EA300012789 /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		B4CD29562B1C9C3B00012789 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4CD294F2B1C8EA300012789 /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD294E2B1C8EA300012789 /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+		B4CD29572B1C9C3B00012789 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4CD29562B1C9C3B00012789 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B40E0E602B1BB746006DD6F5 /* Co_working.xcdatamodeld */ = {

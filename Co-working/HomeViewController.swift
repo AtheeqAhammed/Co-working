@@ -22,6 +22,9 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func bookWorkStationTapped(_ sender: UIButton) {
+        let calenderController = storyboard?.instantiateViewController(identifier: "CalendarViewController") as! CalendarViewController
+        self.navigationController?.pushViewController(calenderController, animated: true)
+
     }
     
     @IBAction func meetingRoomTapped(_ sender: UIButton) {

@@ -10,6 +10,7 @@ import UIKit
 class CreateAccountViewController: UIViewController {
     
     var accountCreateModel: AccountCreateModel?
+    var createAccountViewModel = CreateAccountViewModel()
 
     @IBOutlet weak var fullNameTxt: UITextField!
     @IBOutlet weak var mobileNumberTxt: UITextField!
@@ -20,6 +21,7 @@ class CreateAccountViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         mobileNumberTxt.delegate = self
+
     }
 
     @IBAction func logInTapped(_ sender: UIButton) {
@@ -28,11 +30,15 @@ class CreateAccountViewController: UIViewController {
     }
     
     @IBAction func createAccountTapped(_ sender: UIButton) {
-        validation()
-        
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        self.navigationController?.pushViewController(homeViewController, animated: true)
+        if validation() == true {
+            createUserDetails()
+            
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.pushViewController(homeViewController, animated: true)
+        } else {
+            showAlert(message: "Failed to create account")
+        }
     }
     
     func validation() -> Bool{
@@ -47,6 +53,22 @@ class CreateAccountViewController: UIViewController {
             showAlert(message: "Enter valid email")
         }
         return true
+    }
+    
+    func createUserDetails(){
+        
+        var accountModel = AccountCreateModel()
+        accountModel.name = self.fullNameTxt.text!
+        accountModel.mobileNumber = self.mobileNumberTxt.text
+        accountModel.email = self.emailTxt.text
+        
+        createAccountViewModel.accountCreate(userDetails: accountModel) { success, error in
+            if let error = error {
+                self.showAlert(message: error)
+            } else {
+                self.accountCreateModel = self.createAccountViewModel.getUserDetails()
+            }
+        }
     }
     
     

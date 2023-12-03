@@ -25,4 +25,10 @@ extension String {
         let predicate = NSPredicate(format: "SELF MATCHES %@", regex)
         return predicate.evaluate(with: self)
     }
+    
+    func isValidPhone() -> Bool {
+      let regex = try! NSRegularExpression(pattern: "^[0-9]\\d{9}$", options: .caseInsensitive)
+      let valid = regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
+        return valid
+    }
 }

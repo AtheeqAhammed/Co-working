@@ -10,4 +10,6 @@ import Foundation
 struct Constants{
     
     static var createAccountAPI = "https://demo0413095.mockable.io/digitalflake/api/create_account"
+    
+    static var loginAPI = "https://demo0413095.mockable.io/digitalflake/api/login"
 }
