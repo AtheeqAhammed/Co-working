@@ -14,7 +14,7 @@ class CreateAccountViewModel {
     
     func accountCreate(userDetails: AccountCreateModel, completion: @escaping ViewModelCallback){
         
-        var parameters = ["fullName" : userDetails.name, "mobileNumber": userDetails.mobileNumber, "email": userDetails.email]
+        let parameters = ["fullName" : userDetails.name, "mobileNumber": userDetails.mobileNumber, "email": userDetails.email]
         
         WebServiceManager.shared.postRequestWithEndpoint(endpoint: Constants.createAccountAPI, parameters: parameters as Parameters, headers: nil) { error, user in
             if let loadError =  error{

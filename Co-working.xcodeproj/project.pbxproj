@@ -21,11 +21,16 @@
 		B40E0E792B1BD032006DD6F5 /* AccountCreateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E782B1BD032006DD6F5 /* AccountCreateModel.swift */; };
 		B40E0E7C2B1BD64E006DD6F5 /* ExtensionCreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E7B2B1BD64E006DD6F5 /* ExtensionCreateAccountVC.swift */; };
 		B40E0E7F2B1BDAAF006DD6F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E7E2B1BDAAF006DD6F5 /* Constants.swift */; };
-		B40E0E812B1BDFF0006DD6F5 /* BookingHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */; };
-		B40E0E832B1BE242006DD6F5 /* BookingHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */; };
+		B44378652B1D23D900F0A667 /* GetSlotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44378642B1D23D900F0A667 /* GetSlotViewModel.swift */; };
+		B4732B912B1DC6D1006A4540 /* GetBookingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4732B902B1DC6D1006A4540 /* GetBookingViewModel.swift */; };
+		B4AD4CA92B1F321600F4266F /* BookingHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD4CA82B1F321600F4266F /* BookingHistoryViewController.swift */; };
+		B4AD4CAB2B1F34B500F4266F /* BookingHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AD4CAA2B1F34B500F4266F /* BookingHistoryCell.swift */; };
 		B4B9AD642B1CBD6800556B8A /* DateSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD632B1CBD6800556B8A /* DateSelectViewController.swift */; };
-		B4B9AD662B1CDB2700556B8A /* DateCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD652B1CDB2700556B8A /* DateCollectionCell.swift */; };
+		B4B9AD662B1CDB2700556B8A /* SlotCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD652B1CDB2700556B8A /* SlotCollectionCell.swift */; };
 		B4B9AD6C2B1D116C00556B8A /* DeskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD6B2B1D116C00556B8A /* DeskViewController.swift */; };
+		B4B9AD6E2B1D180600556B8A /* GetSlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD6D2B1D180600556B8A /* GetSlotModel.swift */; };
+		B4B9AD702B1D18C600556B8A /* GetAvailabilityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD6F2B1D18C600556B8A /* GetAvailabilityModel.swift */; };
+		B4B9AD722B1D193800556B8A /* GetBookingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B9AD712B1D193800556B8A /* GetBookingModel.swift */; };
 		B4CD29502B1C8EA300012789 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = B4CD294F2B1C8EA300012789 /* CalendarKit */; };
 		B4CD29522B1C8F5A00012789 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */; };
 		B4CD29542B1C8FB500012789 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CD29532B1C8FB500012789 /* EKWrapper.swift */; };
@@ -52,11 +57,16 @@
 		B40E0E782B1BD032006DD6F5 /* AccountCreateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCreateModel.swift; sourceTree = "<group>"; };
 		B40E0E7B2B1BD64E006DD6F5 /* ExtensionCreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCreateAccountVC.swift; sourceTree = "<group>"; };
 		B40E0E7E2B1BDAAF006DD6F5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryController.swift; sourceTree = "<group>"; };
-		B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryCell.swift; sourceTree = "<group>"; };
+		B44378642B1D23D900F0A667 /* GetSlotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSlotViewModel.swift; sourceTree = "<group>"; };
+		B4732B902B1DC6D1006A4540 /* GetBookingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBookingViewModel.swift; sourceTree = "<group>"; };
+		B4AD4CA82B1F321600F4266F /* BookingHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryViewController.swift; sourceTree = "<group>"; };
+		B4AD4CAA2B1F34B500F4266F /* BookingHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingHistoryCell.swift; sourceTree = "<group>"; };
 		B4B9AD632B1CBD6800556B8A /* DateSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectViewController.swift; sourceTree = "<group>"; };
-		B4B9AD652B1CDB2700556B8A /* DateCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionCell.swift; sourceTree = "<group>"; };
+		B4B9AD652B1CDB2700556B8A /* SlotCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotCollectionCell.swift; sourceTree = "<group>"; };
 		B4B9AD6B2B1D116C00556B8A /* DeskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskViewController.swift; sourceTree = "<group>"; };
+		B4B9AD6D2B1D180600556B8A /* GetSlotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSlotModel.swift; sourceTree = "<group>"; };
+		B4B9AD6F2B1D18C600556B8A /* GetAvailabilityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAvailabilityModel.swift; sourceTree = "<group>"; };
+		B4B9AD712B1D193800556B8A /* GetBookingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBookingModel.swift; sourceTree = "<group>"; };
 		B4CD29512B1C8F5A00012789 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		B4CD29532B1C8FB500012789 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		B4CD295A2B1C9D0C00012789 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
@@ -113,11 +123,11 @@
 				B40E0E6E2B1BB770006DD6F5 /* CreateAccountViewController.swift */,
 				B40E0E702B1BC61F006DD6F5 /* LoginViewController.swift */,
 				B40E0E722B1BC63D006DD6F5 /* HomeViewController.swift */,
-				B40E0E802B1BDFF0006DD6F5 /* BookingHistoryController.swift */,
-				B40E0E822B1BE242006DD6F5 /* BookingHistoryCell.swift */,
 				B4B9AD632B1CBD6800556B8A /* DateSelectViewController.swift */,
-				B4B9AD652B1CDB2700556B8A /* DateCollectionCell.swift */,
+				B4B9AD652B1CDB2700556B8A /* SlotCollectionCell.swift */,
 				B4B9AD6B2B1D116C00556B8A /* DeskViewController.swift */,
+				B4AD4CA82B1F321600F4266F /* BookingHistoryViewController.swift */,
+				B4AD4CAA2B1F34B500F4266F /* BookingHistoryCell.swift */,
 			);
 			path = "Co-working";
 			sourceTree = "<group>";
@@ -135,6 +145,9 @@
 			children = (
 				B40E0E782B1BD032006DD6F5 /* AccountCreateModel.swift */,
 				B4CD295C2B1CA94100012789 /* LoginModel.swift */,
+				B4B9AD6D2B1D180600556B8A /* GetSlotModel.swift */,
+				B4B9AD6F2B1D18C600556B8A /* GetAvailabilityModel.swift */,
+				B4B9AD712B1D193800556B8A /* GetBookingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,6 +182,8 @@
 			children = (
 				B4CD295A2B1C9D0C00012789 /* CreateAccountViewModel.swift */,
 				B4CD295E2B1CA9DA00012789 /* LoginViewModel.swift */,
+				B44378642B1D23D900F0A667 /* GetSlotViewModel.swift */,
+				B4732B902B1DC6D1006A4540 /* GetBookingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -252,12 +267,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40E0E812B1BDFF0006DD6F5 /* BookingHistoryController.swift in Sources */,
-				B40E0E832B1BE242006DD6F5 /* BookingHistoryCell.swift in Sources */,
 				B40E0E712B1BC61F006DD6F5 /* LoginViewController.swift in Sources */,
 				B40E0E7F2B1BDAAF006DD6F5 /* Constants.swift in Sources */,
 				B40E0E6F2B1BB770006DD6F5 /* CreateAccountViewController.swift in Sources */,
 				B40E0E5C2B1BB746006DD6F5 /* ViewController.swift in Sources */,
+				B4B9AD6E2B1D180600556B8A /* GetSlotModel.swift in Sources */,
+				B4B9AD702B1D18C600556B8A /* GetAvailabilityModel.swift in Sources */,
+				B4AD4CAB2B1F34B500F4266F /* BookingHistoryCell.swift in Sources */,
+				B44378652B1D23D900F0A667 /* GetSlotViewModel.swift in Sources */,
+				B4732B912B1DC6D1006A4540 /* GetBookingViewModel.swift in Sources */,
 				B4CD295B2B1C9D0C00012789 /* CreateAccountViewModel.swift in Sources */,
 				B40E0E622B1BB746006DD6F5 /* Co_working.xcdatamodeld in Sources */,
 				B4CD295F2B1CA9DA00012789 /* LoginViewModel.swift in Sources */,
@@ -265,9 +283,11 @@
 				B40E0E7C2B1BD64E006DD6F5 /* ExtensionCreateAccountVC.swift in Sources */,
 				B40E0E762B1BC892006DD6F5 /* WebServiceManager.swift in Sources */,
 				B4CD29542B1C8FB500012789 /* EKWrapper.swift in Sources */,
-				B4B9AD662B1CDB2700556B8A /* DateCollectionCell.swift in Sources */,
+				B4B9AD662B1CDB2700556B8A /* SlotCollectionCell.swift in Sources */,
 				B4B9AD6C2B1D116C00556B8A /* DeskViewController.swift in Sources */,
+				B4AD4CA92B1F321600F4266F /* BookingHistoryViewController.swift in Sources */,
 				B40E0E582B1BB746006DD6F5 /* AppDelegate.swift in Sources */,
+				B4B9AD722B1D193800556B8A /* GetBookingModel.swift in Sources */,
 				B40E0E792B1BD032006DD6F5 /* AccountCreateModel.swift in Sources */,
 				B4B9AD642B1CBD6800556B8A /* DateSelectViewController.swift in Sources */,
 				B40E0E732B1BC63D006DD6F5 /* HomeViewController.swift in Sources */,

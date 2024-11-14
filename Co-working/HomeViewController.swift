@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
 
     @IBAction func bookingHistoryTapped(_ sender: UIButton) {
         
-        let bookingHistoryController = storyboard?.instantiateViewController(identifier: "BookingHistoryController") as! BookingHistoryController
+        let bookingHistoryController = storyboard?.instantiateViewController(identifier: "BookingHistoryViewController") as! BookingHistoryViewController
         self.navigationController?.pushViewController(bookingHistoryController, animated: true)
     }
     

@@ -7,8 +7,8 @@
 
 import UIKit
 
-class DateCollectionCell: UICollectionViewCell {
+class SlotCollectionCell: UICollectionViewCell {
     
-    @IBOutlet weak var displayLabel: UILabel!
+    @IBOutlet weak var slotNameLabel: UILabel!
     
 }

@@ -22,7 +22,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        checkValidation()
+//        checkValidation()
         let homeViewController = storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
@@ -41,13 +41,13 @@ class LoginViewController: UIViewController {
     }
     
     func getUserDetails(){
-        loginViewModel.loginUser(loginDetails: LoginModel()) { success, error in
-            if let error = error {
-                self.showAlert(message: error)
-            } else {
-                self.loginModel = self.loginViewModel.getUserDetails()
-            }
-        }
+//        loginViewModel.loginUser(loginDetails: LoginModel()) { success, error in
+//            if let error = error {
+//                self.showAlert(message: error)
+//            } else {
+//                self.loginModel = self.loginViewModel.getUserDetails()
+//            }
+//        }
     }
     
     func showAlert(message: String){

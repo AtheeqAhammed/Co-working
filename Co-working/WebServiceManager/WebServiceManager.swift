@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+typealias Response<T: Codable> = (Result<T, Error>) -> Void
 typealias ViewModelCallback = (_ success:Bool,_ error:String?) -> Void
 
 class WebServiceManager {
@@ -39,25 +40,39 @@ class WebServiceManager {
     }
     
     
-    func getRequestWithHeadersEndpoint(endpoint : String ,headers : HTTPHeaders?,onFinished: @escaping ( _ error:String?,  _ user: Any?) -> ())  {
-        print(endpoint)
-        
-        AF.request(endpoint, method: .get,  parameters: nil, encoding: JSONEncoding.default,headers: headers)
+    func getRequestWithHeadersEndpoint<T: Codable>(endpoint: String, headers: HTTPHeaders?,
+        onFinished: @escaping Response<T>)  {
+        let url = endpoint
+        AF.request(url.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)!, method: .get,  parameters: nil, encoding: JSONEncoding.default)
             .responseJSON { response in
-                print(response)
+                debugPrint(response)
                 switch response.result {
                 case .success:
-                    //  print(response)
                     if let result = response.data {
-                        onFinished(nil, result)
-                    }else{
-                        onFinished("Something went wrong", nil)
+                        do {
+                            let decoder = JSONDecoder()
+                            let data = try decoder.decode(T.self, from: result)
+                            onFinished(.success(data))
+                        }
+                        catch {
+                            onFinished(.failure(error))
+                            debugPrint("Failed to decode")
+                        }
+                    } else {
+                        if let error = response.error {
+                            onFinished(.failure(error))
+                        } else {
+                            let error = NSError(domain: "", code: 500, userInfo: [ NSLocalizedDescriptionKey: "Something went wrong"])
+                            onFinished(.failure(error))
+                            debugPrint(error)
+                        }
                     }
                     break
                 case .failure(let error):
-                    onFinished("Something went wrong", nil)
-                    print(error)
+                    onFinished(.failure(error))
+                    debugPrint(error)
                 }
             }
-    }
+        }
 }
+
